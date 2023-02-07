@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="css/stylef.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/94b942609c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+  <h1 id="title">FeedBack about our Products</h1>
+  
+
+  <fieldset>
+    <legend>Personal Details</legend>
+    <div>
+      <label id="name-label" for="name">1. Name:</label>
+      <input type="text" required id="name" name="user_name" placeholder="Enter name here">   </div>
+    <div>
+      <label id="number-label" for="phone">2. Phone Number:</label>
+      <input type="number" id="number" name="user_name" placeholder="Enter 10 digit number" min="1" max="9">  </div>
+    <div>
+    <div>
+      <label for="Gender">3. Gender:</label>
+      <p>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </p>
+    </div>
+    <label for="date-label">4. Date Of Birth:</label>
+    <input type="date" name="dob">
+  
+  </fieldset>
+
+  <fieldset>
+    <legend>About Product</legend>
+    <label for="product">1. Are you able to find model of product on this website suitable for you?</label>
+    <p>
+      <input type="checkbox" name="yes" value="yes"> YES<br>
+      <input type="checkbox" name="no" value="no"> NO<br>
+    </p>
+
+    <label for="product">2. Do you like collection of our products?</label>
+    <p>
+      <input type="checkbox" name="yes" value="yes"> YES<br>
+      <input type="checkbox" name="no" value="no"> NO<br>
+    </p>
+
+    <label for="product">3. How many time did you purchase  products in our website?</label>
+    <input list="reg" name="reg">
+        <datalist id="reg">
+            <option value="More than one">
+            <option value="More than two">
+            <option value="More than three">
+            
+          </datalist>
+          <br>
+          <br>
+          <div>
+    <label for="product">4. If you have purchased more than twice you will get a extra offer?</label><br>      
+    <input type="text" required id="name" name="user_name" placeholder="Enter name bill number"> <br> 
+    <input type="text" required id="name" name="user_name" placeholder="Enter name bill number">
+</div> 
+  </fieldset>
+  
+
+  
+  <fieldset>
+    <legend>Warrenty Check</legend>
+    <div>
+      <label for="skin">1. Year of purchase?</label>
+      <select id="dropdown">
+  <option value="d">2020</option>
+  <option value="o">2021</option>
+  <option value="c">2022</option>
+  <option value="n">2023</option>
+  </select>
+<br>
+<br>
+<p>2. what is the model number and the bill number?</p>
+<input type="text" required id="name" name="user_name" placeholder="Enter name model number"> <br> 
+<input type="text" required id="name" name="user_name" placeholder="Enter name bill number">
+<br>
+<br>
+      
+    </div>
+  </fieldset>
+
+
+  
+  <fieldset>
+    <legend>Other</legend>
+    <div>
+      <label for="msg"></label>
+      <p>1. Do you have any query? (If yes, please note)</p>
+      <textarea id="msg" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+    <div>
+      <label for="msg">2. Rate our product?</label><br>
+      <div class="stars">
+        <form action="">
+          <input class="star star-5" id="star-5" type="radio" name="star"/>
+          <label class="star star-5" for="star-5"></label>
+          <input class="star star-4" id="star-4" type="radio" name="star"/>
+          <label class="star star-4" for="star-4"></label>
+          <input class="star star-3" id="star-3" type="radio" name="star"/>
+          <label class="star star-3" for="star-3"></label>
+          <input class="star star-2" id="star-2" type="radio" name="star"/>
+          <label class="star star-2" for="star-2"></label>
+          <input class="star star-1" id="star-1" type="radio" name="star"/>
+          <label class="star star-1" for="star-1"></label>
+        </form>
+      </div>
+
+      <div>
+        <label for="msg">3. Feed back of website</label><br>
+        <textarea id="msg2" name="user_message" rows="4" cols="50" placeholder="Enter Text Here"></textarea>   </div>
+
+  </fieldset>
+
+  <div id="submitbutton">
+    <button type="submit" id="submit">Send your Feedback</button>   </div>
+
+   <div id="submitbutton">
+    <button type="reset" id="reset">Reset</button>
+   </div> 
+
+</form>
+  </div>
+</body>
+</html>
